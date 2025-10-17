@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1. 導航列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">雅萱的作品集</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero Section -->
+  <section id="home" class="py-5 bg-light">
+    <div class="container">
+      <h1 class="display-4 fw-bold">你好，我是雅萱</h1>
+      <p class="lead">一位淡江大學的學生。</p>
+      <a href="#portfolio" class="btn btn-success me-2">查看作品</a>
+      <a href="#contact" class="btn btn-outline-success">聯絡我</a>
+    </div>
+  </section>
+
+  <!-- 3. 關於我 -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="mb-5">關於我</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="22.jpg" class="img-fluid rounded-circle" alt="我的照片">
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold fs-5 text-secondary">嗨！我是一位熱愛學習的學生，專注於前端開發與UI設計。</p>
+          <p>我熟悉 HTML、CSS、JavaScript 以及 Bootstrap，喜歡設計直覺且響應式的網站。</p>
+          <p>未來希望能成為全端工程師，結合設計與程式創造出令人驚艷的網頁體驗。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 技能展示 -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-5">我的技能</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">HTML & CSS</h5>
+              <p class="card-text">能建立結構良好、具備RWD的網站。</p>
+              <span class="badge bg-success">熟練</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">能使用基本DOM操作與事件控制。</p>
+              <span class="badge bg-info">進階中</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">熟悉Bootstrap框架，可快速設計響應式頁面。</p>
+              <span class="badge bg-primary">熟練</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 作品集 -->
+  <section id="portfolio" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="mb-5">作品集</h2>
+      <div class="row">
+        <div class="col-md-4">
+      <div class="card h-100 ">
+        <img src="11.png" class="img-fluid max-width: 100%; " alt="cat">
+        <div class="card-body">
+          <h5 class="card-title">作品一</h5>
+          <p class="card-text">這是我第一個個人網站設計。</p>
+          <a href="#" class="btn btn-success">查看詳情</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 作品二 -->
+    <div class="col-md-4">
+      <div class="card h-100 ">
+        <img src="44.png" class="img-fluid max-width: 100%; " alt="dog">
+        <div class="card-body">
+          <h5 class="card-title">作品二</h5>
+          <p class="card-text">一個練習使用 Bootstrap 建立的響應式頁面。</p>
+          <a href="#" class="btn btn-success">查看詳情</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 作品三 -->
+    <div class="col-md-4">
+      <div class="card h-100 ">
+        <img src="33.png" class="img-fluid max-width: 100%; " alt="cat2">
+        <div class="card-body">
+          <h5 class="card-title">作品三</h5>
+          <p class="card-text">我的個人介紹網站。</p>
+          <a href="#" class="btn btn-success">查看詳情</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 聯絡表單 -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-5">聯絡我</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">主旨</label>
+              <input type="text" class="form-control" id="subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">訊息</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100">送出</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Footer（唯一置中區塊） -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">© 2025 雅萱的作品集</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
